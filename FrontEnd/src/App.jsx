@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import FeatureSection from './components/FeatureSection'
+import Workflow from './components/Workflow'
+import Pricing from './components/Pricing'
 
 
 
@@ -15,6 +17,8 @@ function App() {
        <Navbar/>
        <HeroSection/>
        <FeatureSection/>
+       <Workflow/>
+       <Pricing/>
     </>
   )
 }
