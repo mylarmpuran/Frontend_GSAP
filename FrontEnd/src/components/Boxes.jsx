@@ -11,6 +11,7 @@ export default function Boxes() {
 
   const toggleTimeline = () => {
     tl.current.reversed(!tl.current.reversed());
+    // console.log('i am from tl.current.reversed',tl.current.reversed(!tl.current.reversed()))
   };
 
   useGSAP(
@@ -29,7 +30,7 @@ export default function Boxes() {
 
   return (
     <main>
-      <section className="boxes-container" ref={container}>
+      <section className="boxes-container px-36" ref={container}>
         <h2>Use the button to toggle a Timeline</h2>
         <div>
           <button onClick={toggleTimeline}>Toggle Timeline</button>

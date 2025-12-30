@@ -176,3 +176,17 @@ export const communityLinks = [
   { href: "#", text: "Hackathons" },
   { href: "#", text: "Jobs" },
 ];
+
+
+// Footer
+
+export const Monday = [
+  { href: "#", text: "Pricing" },
+  { href: "#", text: "Contact us" },
+  { href: "#", text: "Templates" },
+  { href: "#", text: "SMB" },
+  { href: "#", text: "Enterprise" },
+  { href: "#", text: "Nonprofits" },
+  { href: "#", text: "App marketplace" },
+  { href: "#", text: "24/7 support" },
+];
