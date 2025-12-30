@@ -6,17 +6,17 @@ import { SplitText } from "gsap/all";
 gsap.registerPlugin(SplitText);
 
 function GSAP()  {
-    // const green = useRef();
-    // const purpule = useRef();
-    // const blue = useRef();
+    const green = useRef();
+    const purpule = useRef();
+    const blue = useRef();
     useGSAP(() => {
             // Refs allow you to access DOM nodes
             // console.log(green)
 
             // then we can animate them like so..
-           gsap.to("#green", {rotation: 360, x: 100, duration: 1});
-           gsap.from("#purple", {rotation: -360, x: -100, duration: 5});
-           gsap.fromTo("#blue", {x: -100},{rotation: 360, x: 100, duration: 10});
+           gsap.to(green.current, {rotation: 360, x: 100, duration: 1});
+           gsap.from(purpule.current, {rotation: -360, x: -100, duration: 5});
+           gsap.fromTo(blue.current, {x: -100},{rotation: 360, x: 100, duration: 10});
 
            let split = SplitText.create(".split", {type: "words, chars"});
 
@@ -32,9 +32,9 @@ function GSAP()  {
         return (
                     <div className="flex flex-col justify-center w-96">
                         
-                        <div id = "green" className="h-80 w-35 border-2 mt-10 bg-red-600" >Komal</div>
-                        <div id = "purple" className="h-80 w-35 border-2 mt-10 bg-green-600" >Aadya</div>
-                        <div id="blue" className="h-80 w-35 border-2 mt-10 bg-blue-600" >Aagastya</div>
+                        <div ref={green} className="h-80 w-35 border-2 mt-10 bg-red-600" >Komal</div>
+                        <div ref={purpule} className="h-80 w-35 border-2 mt-10 bg-green-600" >Aadya</div>
+                        <div ref={blue} className="h-80 w-35 border-2 mt-10 bg-blue-600" >Aagastya</div>
                         <div className="split">With autoSplitenabled, you should always create your animations in the onSplit() callback so that
                             if it re-splits later, the resulting animations affect the freshly-created line/word/character elements instead of the ones from the
                             previous split.

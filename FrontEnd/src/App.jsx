@@ -7,6 +7,8 @@ import FeatureSection from './components/FeatureSection'
 import Workflow from './components/Workflow'
 import Pricing from './components/Pricing'
 import GSAP from './components/GSAP'
+import GSAPtimeline from './components/GSAPtimeline'
+import GSAPSelector from './components/GSAPSelector'
 
 
 
@@ -16,7 +18,9 @@ function App() {
   return (
     <>
        <Navbar/>
-       <GSAP/>
+       {/* <GSAP/> */}
+       <GSAPSelector/>
+       <GSAPtimeline/>
        <HeroSection/>
        <FeatureSection/>
        <Workflow/>
