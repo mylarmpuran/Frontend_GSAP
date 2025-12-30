@@ -1,7 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { forwardRef, useEffect, useRef } from "react";
-import Box from "./Box";
+
 
 export default function GSAPSelector() {
   const boxRef = useRef(null);
@@ -9,6 +9,8 @@ export default function GSAPSelector() {
   useEffect(() => {
     if (boxRef.current) {
       console.log("Box DOM node:", boxRef.current);
+      console.log("split",gsap.utils.splitColor("red"))
+      console.log("split",gsap.utils.toArray("hight light the things"))
       boxRef.current.style.backgroundColor = 'lightgray'
     }
   }, []);

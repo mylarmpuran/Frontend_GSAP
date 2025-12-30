@@ -9,6 +9,7 @@ import Pricing from './components/Pricing'
 import GSAP from './components/GSAP'
 import GSAPtimeline from './components/GSAPtimeline'
 import GSAPSelector from './components/GSAPSelector'
+import Boxes from './components/Boxes'
 
 
 
@@ -19,7 +20,8 @@ function App() {
     <>
        <Navbar/>
        {/* <GSAP/> */}
-       <GSAPSelector/>
+       <Boxes/>
+       {/* <GSAPSelector/> */}
        <GSAPtimeline/>
        <HeroSection/>
        <FeatureSection/>
