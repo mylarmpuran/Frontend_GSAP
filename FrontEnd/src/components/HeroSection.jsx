@@ -1,11 +1,34 @@
 import React from 'react'
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react'
+import { SplitText } from "gsap/all";
 import video1 from "../assets/video1.mp4";
 import video2 from '../assets/video2.mp4';
 
+
+gsap.registerPlugin(useGSAP, SplitText)
+
 function HeroSection() {
+
+
+  useGSAP( () => {
+    let split = SplitText.create(".virtual", {
+      type: "chars",
+      autoSplit: true,
+      onSplit: (self) => {
+        return gsap.from(self.lines, {
+          duration: 2,
+          y:-200,
+          autoAlpha: 0,
+          stagger: 0.05
+        });
+      }
+    })
+  })
   return (
     <div className='flex flex-col items-center mt-6 lg:mt-20'>
-        <h1 className='text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide'>
+        <h1 className='virtual text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide'>
             VirtualR build tools 
             <span className='bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text'>
                 {" "}
