@@ -190,3 +190,65 @@ export const Monday = [
   { href: "#", text: "App marketplace" },
   { href: "#", text: "24/7 support" },
 ];
+
+
+export const Features = [
+  { href: "#", text: "Docs" },
+  { href: "#", text: "Integrations us" },
+  { href: "#", text: "Automation" },
+  { href: "#", text: "AI" },
+  { href: "#", text: "Dashboards" },
+  { href: "#", text: "Kanban" },
+  { href: "#", text: "App Gantt" },
+  { href: "#", text: "Adavance" },
+];
+
+export const mondayPoducts = [
+  { href: "#", text: "work management" },
+  { href: "#", text: "Monday CRM" },
+  { href: "#", text: "monday campaigns" },
+  { href: "#", text: "monday dev" },
+  { href: "#", text: "monday service" },
+  { href: "#", text: "WorkCanvas" },
+  { href: "#", text: "WorkForms" },
+  { href: "#", text: "Adavance" },
+];
+
+export const useCases = [
+  { href: "#", text: "Marketing" },
+  { href: "#", text: "Project management" },
+  { href: "#", text: "sales" },
+  { href: "#", text: "Developers" },
+  { href: "#", text: "HR" },
+  { href: "#", text: "IT" },
+  { href: "#", text: "Operations" },
+  { href: "#", text: "Constructions" },
+];
+
+export const Company = [
+  { href: "#", text: "About us" },
+  { href: "#", text: "Careers - Were hiring" },
+  { href: "#", text: "Insigts for leaders" },
+  { href: "#", text: "Press" },
+  { href: "#", text: "Customer stories" },
+  { href: "#", text: "Become a partner" },
+  { href: "#", text: "sustaninbility & ESG" },
+  { href: "#", text: "Affiliates" },
+  { href: "#", text: "Emergency Response" },
+  { href: "#", text: "Investor relations" },
+];
+
+export const Resources = [
+  { href: "#", text: "Help Center" },
+  { href: "#", text: "Community" },
+  { href: "#", text: "Blog" },
+  { href: "#", text: "Whats new" },
+  { href: "#", text: "monday academy" },
+  { href: "#", text: "Global events" },
+  { href: "#", text: "monday spaces" },
+  { href: "#", text: "Startup for StartUp" },
+  { href: "#", text: "App development" },
+  { href: "#", text: "Find a partner" },
+  { href: "#", text: "Hire an expert" },
+  { href: "#", text: "Compare" },
+];
