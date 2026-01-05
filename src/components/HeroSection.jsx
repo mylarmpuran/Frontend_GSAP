@@ -41,8 +41,11 @@ function HeroSection() {
       }
     })
 
-    gsap.from([".video1"],{opacity:0, x:-800, duration:3})
-    gsap.from([".video2"],{opacity:0, x:800, duration:3})
+    gsap.from([".video1"],{opacity:0, x:-800, duration:3, delay:2,ease: "power3.out"})
+    gsap.from([".video2"],{opacity:0, x:800, duration:3, delay:2,ease: "power3.out"})
+    gsap.from(".btfree",{opacity:0, y:100, duration:3, delay:2,ease: "power3.out"})
+    gsap.from(".btdoc",{opacity:0, y:100, duration:3, delay:2,ease: "power3.out"})
+
 
   }
   
@@ -65,11 +68,11 @@ function HeroSection() {
       <div className='flex justify-center my-10'>
         <a
         href="#"
-        className='bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md'
+        className='btfree bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md'
         >
             Start for free
         </a>
-        <a href="#" className='py-3 px-4 mx-3 rounded-md border'>
+        <a href="#" className='btdoc py-3 px-4 mx-3 rounded-md border'>
             Documentation
         </a>
         </div>  

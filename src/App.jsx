@@ -11,6 +11,7 @@ import GSAPtimeline from './components/GSAPtimeline'
 import GSAPSelector from './components/GSAPSelector'
 import Boxes from './components/Boxes'
 import Footer from './components/Footer'
+import ScrolleTrigger from './components/ScrolleTrigger'
 
 
 
@@ -24,8 +25,10 @@ function App() {
        {/* <Boxes/> */}
        {/* <GSAPSelector/> */}
        {/* <GSAPtimeline/> */}
+       
        <HeroSection/>
        <FeatureSection/>
+       <ScrolleTrigger/>
        <Workflow/>
        <Pricing/>
        <Footer/>
